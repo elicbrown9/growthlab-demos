@@ -191,7 +191,8 @@ section{position:relative}
 /* reviews */
 .reviews{background:var(--paper);color:var(--paper-ink);padding:clamp(64px,9vw,120px) 0}
 .reviews .sec-head p{color:#4b4f45}
-.score{display:flex;align-items:baseline;gap:14px;font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.sec-head>*{min-width:0}
+.score{display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.08em}
 .score strong{font-family:var(--display);font-weight:400;font-size:clamp(72px,10vw,128px);line-height:.85;color:var(--turf-dark);letter-spacing:0}
 .quotes{columns:1;column-gap:28px}
 @media (min-width:760px){.quotes{columns:2}}
@@ -261,7 +262,11 @@ footer.site .legal{margin-top:40px;font-size:13px;color:#7d8375}
   .stripes i{height:10px}
   .hero .wrap{padding-top:18px}
   .ctas .btn{width:100%;justify-content:center}
+  .stripes-list .wrap{grid-template-columns:30px 1fr;gap:4px 12px}
+  blockquote{padding:22px 18px 18px}
+  .score strong{font-size:64px}
 }
+.grid .a img{object-position:30% 20%}
 
 /* reveal */
 .rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
