@@ -249,6 +249,19 @@ footer.site .legal{margin-top:40px;font-size:13px;color:#7d8375}
 .dock .d-call{background:var(--volt);color:var(--ink)}
 .dock .d-quote{border:2px solid #eef0ea;color:#fff}
 @media (min-width:860px){.dock{display:none}}
+.dock a{white-space:nowrap}
+@media (max-width:859px){.top .callbtn{display:none}.top .wrap{justify-content:center}}
+@media (max-width:759px){
+  .hero{min-height:0;display:block}
+  .hero::before{display:none}
+  .hero picture{position:relative;display:block;aspect-ratio:4/3;z-index:auto}
+  .hero picture img{z-index:auto;object-position:50% 50%}
+  .hero picture::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,var(--ink) 100%)}
+  .stripes{top:calc(75vw - 54px);height:44px;width:58%;right:-4%;gap:6px;z-index:1}
+  .stripes i{height:10px}
+  .hero .wrap{padding-top:18px}
+  .ctas .btn{width:100%;justify-content:center}
+}
 
 /* reveal */
 .rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
